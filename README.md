@@ -68,14 +68,14 @@ cd HDRI-SR/
 
 1. Decompose your input data to obtain reflectance components.
 
-Run below MATLAB code.
+Run MATLAB code below.
 ```
 Decompose_Test.m
 ```
 
 2. Pass REF-E (reflectance enhancement).
 
-Run below Python code. Require Tensorflow to run CNN on GPU.
+Run Python code below. Require Tensorflow to run CNN on GPU.
 ```
 python test_real.py --gpu [GPU_number] --datapath [Input data path] --modelpath [Model_B/Model_C]
 
@@ -86,9 +86,9 @@ python test_real.py --gpu [GPU_number] --datapath [Input data path] --modelpath 
 
 3. Recombine or Synthesize to get HDR-SR image.
 
-Run below MATLAB code.
+Run MATLAB code below.
 ```
-Synthesize_test
+Synthesize_Test.m
 ```
 
 4. To visualize the results on your LDR monitor, you need a tone-mapping algorithm.
